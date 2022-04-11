@@ -1,47 +1,30 @@
+import styled, { keyframes } from "styled-components"
+
 import type { NextPage } from "next"
-import styles from "../styles/Home.module.css"
+
+import Intro from "components/sections/intro"
+import Tech from "components/sections/tech"
 
 const Home: NextPage = () => {
   return (
     <>
-      <h1 className={styles.title}>
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
+      <Section>
+        <Intro />
+      </Section>
 
-      <p className={styles.description}>
-        Get started by editing{" "}
-        <code className={styles.code}>pages/index.tsx</code>
-      </p>
-
-      <div className={styles.grid}>
-        <a href="https://nextjs.org/docs" className={styles.card}>
-          <h2>Documentation &rarr;</h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a href="https://nextjs.org/learn" className={styles.card}>
-          <h2>Learn &rarr;</h2>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
-
-        <a
-          href="https://github.com/vercel/next.js/tree/canary/examples"
-          className={styles.card}
-        >
-          <h2>Examples &rarr;</h2>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className={styles.card}
-        >
-          <h2>Deploy &rarr;</h2>
-          <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
-        </a>
-      </div>
+      <Section>
+        <Tech />
+      </Section>
     </>
   )
 }
+
+const Section = styled.section`
+  margin: 15vh 0;
+
+  &:not(:first-of-type) {
+    margin-top: 0;
+  }
+`
 
 export default Home

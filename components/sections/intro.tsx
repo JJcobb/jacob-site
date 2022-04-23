@@ -39,10 +39,11 @@ const gradientMove = keyframes`
 
 const Callout = styled.p`
   font-size: 7vw;
+  font-size: clamp(var(--font-size-h2), 7vw, 150px);
   text-align: center;
   line-height: 1.2;
 
-  padding: 2rem;
+  padding: 2rem 3rem;
   margin-top: 2rem;
   margin-bottom: 0;
   border-radius: 1rem;
@@ -62,15 +63,28 @@ const Callout = styled.p`
 
   /* // * Neon effect */
   /* text glow */
-  text-shadow: -0.2rem -0.2rem 0.5rem var(--color-text),
+
+  /* // TODO: remove in next commit */
+  /* text-shadow: -0.2rem -0.2rem 0.5rem var(--color-text),
     0.2rem 0.2rem 0.5rem var(--color-text), 0 0 1rem var(--color-secondary),
     0 0 2rem var(--color-primary), 0 0 3rem var(--color-primary),
-    0 0 4rem var(--color-primary), 0 0 5rem var(--color-primary);
+    0 0 4rem var(--color-primary); */
+  /* , 0 0 5rem var(--color-primary) */
+
+  text-shadow: -0.1vw -0.1vw 0.25vw var(--color-text),
+    0.1vw 0.1vw 0.25vw var(--color-text), 0 0 0.5vw var(--color-secondary),
+    0 0 1vw var(--color-primary), 0 0 1.5vw var(--color-primary),
+    0 0 2vw var(--color-primary);
 
   /* border glow */
-  box-shadow: 0 0 0.5rem var(--color-text), inset 0 0 0.5rem var(--color-text),
+  /* // TODO: remove in next commit */
+  /* box-shadow: 0 0 0.5rem var(--color-text), inset 0 0 0.5rem var(--color-text),
     0 0 2rem var(--color-primary), inset 0 0 2rem var(--color-primary),
-    0 0 4rem var(--color-primary), inset 0 0 4rem var(--color-primary);
+    0 0 3rem var(--color-primary), inset 0 0 3rem var(--color-primary); */
+
+  box-shadow: 0 0 0.333vw var(--color-text), inset 0 0 0.333vw var(--color-text),
+    0 0 1.5vw var(--color-primary), inset 0 0 1.5vw var(--color-primary),
+    0 0 2vw var(--color-primary), inset 0 0 2vw var(--color-primary);
 
   /* // * Light theme */
   [data-color-theme="light"] & {

@@ -1,0 +1,8 @@
+// TODO: convert to `em`
+$tablet: 760px;
+$desktop: 1400px;
+
+:export {
+  tablet: $tablet;
+  desktop: $desktop;
+}

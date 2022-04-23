@@ -1,3 +1,5 @@
+@import "breakpoints.module.scss";
+
 :root {
   // * Colors
   --color-blue: #1ebbd7;
@@ -31,9 +33,19 @@
   --font-size: 1rem;
   --font-size-l: 1.333rem;
   --font-size-xl: 1.777rem;
-  --font-size-h3: 2.369rem;
-  --font-size-h2: 3.157rem;
-  --font-size-h1: 4.209rem;
+  --font-size-2xl: 2.369rem;
+  --font-size-3xl: 3.157rem;
+  --font-size-4xl: 4.209rem;
+
+  --font-size-h3: var(--font-size-xl);
+  --font-size-h2: var(--font-size-2xl);
+  --font-size-h1: var(--font-size-3xl);
+
+  @media (min-width: $tablet) {
+    --font-size-h3: var(--font-size-2xl);
+    --font-size-h2: var(--font-size-3xl);
+    --font-size-h1: var(--font-size-4xl);
+  }
 }
 
 *,
@@ -124,6 +136,7 @@ h6 {
   font-family: var(--font-family-cursive);
   font-size: var(--font-size-l);
   font-weight: 700;
+  line-height: 1.2;
 }
 
 h1 {

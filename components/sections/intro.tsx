@@ -63,25 +63,12 @@ const Callout = styled.p`
 
   /* // * Neon effect */
   /* text glow */
-
-  /* // TODO: remove in next commit */
-  /* text-shadow: -0.2rem -0.2rem 0.5rem var(--color-text),
-    0.2rem 0.2rem 0.5rem var(--color-text), 0 0 1rem var(--color-secondary),
-    0 0 2rem var(--color-primary), 0 0 3rem var(--color-primary),
-    0 0 4rem var(--color-primary); */
-  /* , 0 0 5rem var(--color-primary) */
-
   text-shadow: -0.1vw -0.1vw 0.25vw var(--color-text),
     0.1vw 0.1vw 0.25vw var(--color-text), 0 0 0.5vw var(--color-secondary),
     0 0 1vw var(--color-primary), 0 0 1.5vw var(--color-primary),
     0 0 2vw var(--color-primary);
 
   /* border glow */
-  /* // TODO: remove in next commit */
-  /* box-shadow: 0 0 0.5rem var(--color-text), inset 0 0 0.5rem var(--color-text),
-    0 0 2rem var(--color-primary), inset 0 0 2rem var(--color-primary),
-    0 0 3rem var(--color-primary), inset 0 0 3rem var(--color-primary); */
-
   box-shadow: 0 0 0.333vw var(--color-text), inset 0 0 0.333vw var(--color-text),
     0 0 1.5vw var(--color-primary), inset 0 0 1.5vw var(--color-primary),
     0 0 2vw var(--color-primary), inset 0 0 2vw var(--color-primary);

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const Subtext = styled.p`
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 
   font-size: 19px;
   font-weight: 300;

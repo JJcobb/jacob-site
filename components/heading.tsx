@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 const Title = styled.h1`
   position: relative;
+  margin-bottom: 0.75em;
 
   /* squigly underline */
   &::after {

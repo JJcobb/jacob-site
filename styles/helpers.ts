@@ -4,6 +4,8 @@ const breakpointSizes = Object.keys(breakpoints)
 
 /**
  * Generate CSS media query
+ * @breakpoint A breakpoint string value or a pixel number. Pixels will be converted to ems.
+ * Example: "tablet" or 1600
  * @returns {String} media query as a string
  */
 export const respondTo = (
@@ -11,10 +13,11 @@ export const respondTo = (
   direction: "min" | "max" = "min",
   dimension: "width" | "height" = "width"
 ) => {
-  let size =
-    typeof breakpoint === "number" ? breakpoint : breakpoints[breakpoint]
-
-  // TODO: handle adding a unit to the end if a number is provided
+  const size =
+    typeof breakpoint === "number"
+      ? // if its a number, divide by the default base font size (16px) to convert the pixels to ems
+        `${breakpoint / 16}em`
+      : breakpoints[breakpoint]
 
   return `@media (${direction}-${dimension}: ${size})`
 }

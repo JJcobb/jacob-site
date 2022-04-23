@@ -1,6 +1,6 @@
-// TODO: convert to `em`
-$tablet: 760px;
-$desktop: 1400px;
+// ? divide by the default base font size (16px) to convert the pixels to ems
+$tablet: (760 / 16) * 1em;
+$desktop: (1400 / 16) * 1em;
 
 :export {
   tablet: $tablet;

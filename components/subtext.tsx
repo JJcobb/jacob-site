@@ -7,7 +7,7 @@ const Subtext = styled.p`
   font-weight: 300;
 
   /* max-width: 60ch; */
-  max-width: 53ch;
+  max-width: 51ch;
   text-align: center;
 
   /* font-size: 1.333rem; */

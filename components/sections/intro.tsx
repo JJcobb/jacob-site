@@ -11,7 +11,7 @@ export default function Intro() {
         <Heading>Hey, I&apos;m Jacob</Heading>
 
         <Subtext>
-          Based in beautiful central Florida; I&apos;m an avid sports fanatic,
+          Based in sunny central Florida; I&apos;m an avid sports fanatic,
           classic rock enthusiast, and an out of this world:
           {/* and I&apos;m an out of this world */}
         </Subtext>

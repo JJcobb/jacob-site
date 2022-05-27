@@ -14,11 +14,13 @@
   // * Dark theme
   --color-text: var(--color-white);
   --color-bg: var(--color-black);
+  --bg-texture: url("/black-bg-texture.jpg");
 
   // * Light theme
   [data-color-theme="light"] {
     --color-text: var(--color-black);
     --color-bg: var(--color-white);
+    --bg-texture: url("/white-bg-texture.jpg");
   }
 
   // * Font families
@@ -64,6 +66,9 @@ body {
 
   color: var(--color-text);
   background-color: var(--color-bg);
+
+  background-image: var(--bg-texture);
+  background-repeat: repeat;
 }
 
 h1,

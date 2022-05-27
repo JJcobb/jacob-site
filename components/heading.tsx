@@ -15,7 +15,7 @@ const Title = styled.h1`
     transform: translateY(0.2em);
 
     border-bottom: 3px solid var(--color-text);
-    border-radius: 51% 49% 53% 47% / 100% 93% 7% 0%;
+    border-radius: 51% 60% 53% 47% / 100% 93% 7% 0%;
 
     pointer-events: none;
   }
